@@ -42,6 +42,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/projectcontour/contour v1.20.0
 	github.com/prometheus/client_golang v1.11.0
+	github.com/ramalhais/external-dns-provider-freedns v0.0.0-20250605204754-055f4ea487a6
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.7.0.20210127161313-bd30bebeac4f
 	github.com/sirupsen/logrus v1.8.1
 	github.com/stretchr/testify v1.7.0
@@ -130,8 +131,7 @@ require (
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.28.0 // indirect
 	github.com/prometheus/procfs v0.6.0 // indirect
-	github.com/ramalhais/external-dns-provider-freedns v0.0.0-20220228133956-5376b956f635 // indirect
-	github.com/ramalhais/go-freedns v0.0.0-20220228002843-b7c699bf3eab // indirect
+	github.com/ramalhais/go-freedns v0.0.0-20250605193006-02a870475483 // indirect
 	github.com/smartystreets/go-aws-auth v0.0.0-20180515143844-0c1422d1fdb9 // indirect
 	github.com/smartystreets/gunit v1.3.4 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect

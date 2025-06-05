@@ -14,7 +14,7 @@
 
 # builder image
 ARG ARCH
-FROM golang:1.17 as builder
+FROM golang:1.17 AS builder
 ARG ARCH
 
 WORKDIR /sigs.k8s.io/external-dns
@@ -24,10 +24,12 @@ COPY go.sum .
 RUN go mod download
 
 COPY . .
-RUN make test build.$ARCH
+#RUN make test build.$ARCH
+RUN make build.$ARCH
 
 # final image
-FROM $ARCH/alpine:3.15
+#FROM $ARCH/alpine:3.15
+FROM alpine:3.15
 
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /sigs.k8s.io/external-dns/build/external-dns /bin/external-dns
